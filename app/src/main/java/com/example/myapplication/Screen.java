@@ -30,24 +30,26 @@ public class Screen extends View implements Runnable {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        bx += x1;
-        by += y1;
+        by++;
 
-        if(bx > this.getWidth()){
-            x1 = -stepX;
-        }
-
-        if(bx < 0){
-            x1 = stepX;
-        }
-
-        if(by > this.getHeight()){
-            y1 = -stepY;
-        }
-
-        if(by < 0){
-            y1 = stepY;
-        }
+//        bx += x1;
+//        by += y1;
+//
+//        if(bx > this.getWidth()){
+//            x1 = -stepX;
+//        }
+//
+//        if(bx < 0){
+//            x1 = stepX;
+//        }
+//
+//        if(by > this.getHeight()){
+//            y1 = -stepY;
+//        }
+//
+//        if(by < 0){
+//            y1 = stepY;
+//        }
 
 
         paint.setARGB( 255,255,0,0 );
